@@ -14,34 +14,31 @@ class ServiceRequest(models.Model):
     APPROVED = 'Approved'
     REPAIRING = 'Repairing'
     DONE = 'Done'
-    RELEASED = 'Released'
     STATUS_CHOICES = [
         (PENDING, 'Pending'),
         (APPROVED, 'Approved'),
         (REPAIRING, 'Repairing'),
         (DONE, 'Done'),
-        (RELEASED, 'Released'),
     ]
 
-    customer = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    customer = models.ForeignKey(CustomUser, related_name='service_requests_as_customer', on_delete=models.CASCADE)
     vehicle = models.ForeignKey(Vehicle, on_delete=models.CASCADE)
-    shop = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True, blank=True)
+    shop = models.ForeignKey(CustomUser, related_name='service_requests_as_shop', on_delete=models.SET_NULL, null=True, blank=True)
     description = models.TextField()
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=PENDING)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
 
-
 class Feedback(models.Model):
-    customer = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    shop = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    customer = models.ForeignKey(CustomUser, related_name='feedbacks_as_customer', on_delete=models.CASCADE)
+    shop = models.ForeignKey(CustomUser, related_name='feedbacks_as_shop', on_delete=models.CASCADE)
     feedback_text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
 
 class Rating(models.Model):
-    customer = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    shop = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    customer = models.ForeignKey(CustomUser, related_name='ratings_as_customer', on_delete=models.CASCADE)
+    shop = models.ForeignKey(CustomUser, related_name='ratings_as_shop', on_delete=models.CASCADE)
     rating = models.PositiveSmallIntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
