@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./js/odometer-theme-default.css">
+    <style>
+        body {
+            margin: 0;
+            
+        }
+
+
+
+        .stats-container {
+            height: 200px;
+            display: grid;
+            gap: 24px;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 80px 0px;
+            max-width: 1000px;
+            margin: auto;
+
+        }
+
+        .stats-container .stat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 24px;
+            text-align: center;
+            gap: 15px;
+        }
+
+
+        .stats-container .stat .odometer {
+            font-size: 50px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .stats-container .stat .type {
+            color: #8d8080;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .odometer.plus {
+            position: relative;
+        }
+
+        .odometer.plus::after {
+            content: "+";
+            position: absolute;
+            top: 0;
+            right: -37px;
+            font-size: 50px;
+        }
+
+        .sub {
+            color: transparent;
+            font-weight: 700;
+            -webkit-text-stroke: 3px orangered;
+        }
+
+        @media (max-width: 700px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="stats-container">
+        <div class="stat">
+            <div class="subscribers-odometer odometer plus sub">0</div>
+            <div class="type">HAPPY CUSTOMERS</div>
+        </div>
+
+        <div class="stat">
+            <div class="videos-odometer odometer plus sub">0</div>
+            <div class="type">Years of Services</div>
+        </div>
+
+        <div class="stat">
+            <div class="projects-odometer odometer sub">0</div>
+            <div class="type">service Completed</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+        integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const createOdometer = (el, value) => {
+            const odometer = new Odometer({
+                el: el,
+                value: 0,
+            });
+
+            let hasRun = false;
+
+            const options = {
+                threshold: [0, 0.9],
+            };
+
+            const callback = (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        if (!hasRun) {
+                            odometer.update(value);
+                            hasRun = true;
+                        }
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(callback, options);
+            observer.observe(el);
+        };
+
+        const subscribersOdometer = document.querySelector(".subscribers-odometer");
+        createOdometer(subscribersOdometer, 29800);
+
+        const videosOdometer = document.querySelector(".videos-odometer");
+        createOdometer(videosOdometer, 10);
+
+        const projectsOdometer = document.querySelector(".projects-odometer");
+        createOdometer(projectsOdometer, 89);
+
+
+
+    </script>
+    
+</body>
+
+</html>
