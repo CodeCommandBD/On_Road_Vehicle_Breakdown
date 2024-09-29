@@ -79,7 +79,6 @@
 
 <script>
 import Swiper from 'swiper/bundle';
-
 export default {
   data() {
     return {
