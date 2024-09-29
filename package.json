@@ -12,7 +12,11 @@
     "bootstrap": "^5.3.3",
     "bootstrap-vue-next": "^0.22.1",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "create-static-build": "^1.0.9721",
+    "scrollmagic": "^2.0.8",
+    "swiper": "^11.1.14",
+    "vue": "^3.2.13",
+    "vue-scrollmagic": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
