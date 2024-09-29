@@ -78,38 +78,39 @@
 </template>
 
 <script>
-import Swiper from 'swiper/bundle';
+import ScrollMagic from 'scrollmagic';
+
 export default {
   data() {
     return {
       activeTab: "profile", // Default active tab
       carServices: [
-        { name: "Windshields", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Door", icon: require('@assets/js/components/repair-service-img/Vector(2).png') },
-        { name: "Air Condition", icon: require('@assets/js/components/repair-service-img/Vector(3).png') },
-        { name: "Batteries", icon: require('@assets/js/components/repair-service-img/Vector(4).png') },
-        { name: "Brake", icon: require('@assets/js/components/repair-service-img/Vector(5).png') },
-        { name: "Car Check", icon: require('@assets/js/components/repair-service-img/Vector(6).png') },
-        { name: "Oil Change", icon: require('@assets/js/components/repair-service-img/Vector(7).png') },
-        { name: "Suspension", icon: require('@assets/js/components/repair-service-img/Vector(8).png') },
-        { name: "Tire", icon: require('@assets/js/components/repair-service-img/Vector(9).png') },
-        { name: "Looking Glass", icon: require('@assets/js/components/repair-service-img/Vector(10).png') },
-        { name: "Cleaning", icon: require('@assets/js/components/repair-service-img/Vector(11).png') },
-        { name: "Painting", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
+        { name: "Windshields", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Door", icon: require('@assets/js/components/repair-service-img/Vector (2).png') },
+        { name: "Air Condition", icon: require('@assets/js/components/repair-service-img/Vector (3).png') },
+        { name: "Batteries", icon: require('@assets/js/components/repair-service-img/Vector (4).png') },
+        { name: "Brake", icon: require('@assets/js/components/repair-service-img/Vector (5).png') },
+        { name: "Car Check", icon: require('@assets/js/components/repair-service-img/Vector (6).png') },
+        { name: "Oil Change", icon: require('@assets/js/components/repair-service-img/Vector (7).png') },
+        { name: "Suspension", icon: require('@assets/js/components/repair-service-img/Vector (8).png') },
+        { name: "Tire", icon: require('@assets/js/components/repair-service-img/Vector (9).png') },
+        { name: "Looking Glass", icon: require('@assets/js/components/repair-service-img/Vector (10).png') },
+        { name: "Cleaning", icon: require('@assets/js/components/repair-service-img/Vector (11).png') },
+        { name: "Painting", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
       ],
       bikeServices: [
-        { name: "Windshields", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Door", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Air Condition", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Batteries", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Brake", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Car Check", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Oil Change", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Suspension", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Tire", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Looking Glass", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Cleaning", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
-        { name: "Painting", icon: require('@assets/js/components/repair-service-img/Vector(1).png') },
+        { name: "Windshields", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Door", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Air Condition", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Batteries", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Brake", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Car Check", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Oil Change", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Suspension", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Tire", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Looking Glass", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Cleaning", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
+        { name: "Painting", icon: require('@assets/js/components/repair-service-img/Vector (1).png') },
       ],
     };
   },

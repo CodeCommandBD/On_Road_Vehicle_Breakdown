@@ -5,6 +5,13 @@ module.exports = {
     outputDir: path.resolve(__dirname, './src/static/website/'), // Output to a directory in STATICFILES_DIRS
     filenameHashing: false, // Django will hash file names, not webpack
     runtimeCompiler: true, // See: https://vuejs.org/v2/guide/installation.html#Runtime-Compiler-vs-Runtime-only
+    configureWebpack: {
+    resolve: {
+      alias: {
+        '@assets': path.resolve(__dirname, 'src/templates/assets'),
+      },
+    },
+  },
     pages: {
         index: {
             entry: 'src/templates/assets/js/main.js', // The new location of your main.js file
