@@ -16,6 +16,7 @@
     "scrollmagic": "^2.0.8",
     "swiper": "^11.1.14",
     "vue": "^3.2.13",
+    "vue-odometer": "^1.0.2",
     "vue-scrollmagic": "^1.2.0"
   },
   "devDependencies": {

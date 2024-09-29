@@ -56,7 +56,7 @@
     <!-- Tab Content -->
     <div class="tab-content">
       <div v-if="activeTab === 'home'" id="home" class="tab-pane active" role="tabpanel" aria-labelledby="home-tab">
-        <div class="row d-flex justify-content-between mb-5">
+        <div class="row d-flex  mb-5">
           <div v-for="service in carServices" :key="service.name" class="col-2 service-item">
             <img :src="service.icon"/>
             <p class="mb-0">{{ service.name }}</p>
@@ -66,7 +66,7 @@
 
       <div v-if="activeTab === 'profile'" id="profile" class="tab-pane active" role="tabpanel"
            aria-labelledby="profile-tab">
-        <div class="row d-flex justify-content-between mb-5">
+        <div class="row d-flex mb-5">
           <div v-for="service in bikeServices" :key="service.name" class="col-2 service-item">
             <img :src="service.icon"/>
             <p class="mb-0">{{ service.name }}</p>
@@ -238,6 +238,7 @@ export default {
   background: #FFF;
   width: 200px;
   box-shadow: 0 0 20px rgba(228, 222, 222, 0.637);
+  margin: 20px
 }
 
 
