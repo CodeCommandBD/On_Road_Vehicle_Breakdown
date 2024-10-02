@@ -15,18 +15,28 @@ class Site(models.Model):
     x_url = models.URLField(default='www.x.com')
 
 
-class Blog(models.Model):
-    PENDING = 'Pending'
-    REPAIRING = 'Repairing'
-    DONE = 'Done'
+class CarRepairingType(models.Model):
+    title = models.CharField(max_length=255)
+    icon = models.ImageField(upload_to='site/', blank=True)
+
+
+class BikeRepairingType(models.Model):
+    title = models.CharField(max_length=255)
+    icon = models.ImageField(upload_to='site/', blank=True)
+
+
+class MembershipServices(models.Model):
+    title = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=8, decimal_places=2, blank=True, null=True)
+    services = models.JSONField()
+
+
+class MembershipServicesType(models.Model):
     STATUS_CHOICES = [
-        (PENDING, 'Pending'),
-        (REPAIRING, 'Repairing'),
-        (DONE, 'Done'),
+        ('monthly', 'monthly'),
+        ('year', 'year'),
     ]
-    customer = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    description = models.TextField(max_length=10000)
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=PENDING)
+    type = models.CharField(max_length=20, choices=STATUS_CHOICES, default='monthly')
 
 
 class TrafficRule(models.Model):

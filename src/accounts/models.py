@@ -9,6 +9,7 @@ class CustomUser(AbstractUser):
     is_admin = models.BooleanField(default=False)
     location = models.CharField(max_length=255)
     phone = models.CharField(max_length=20)
+    rating = models.IntegerField(default=0)
     nid_image = models.ImageField(upload_to='user/', blank=True)
     experience = models.PositiveIntegerField(blank=True, null=True)
     no_of_workers = models.PositiveIntegerField(blank=True, null=True)
