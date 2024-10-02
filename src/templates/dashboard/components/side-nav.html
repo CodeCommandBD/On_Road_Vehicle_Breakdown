@@ -21,5 +21,11 @@
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
+        <li class="menu-item {% if title == 'Site' %}active{% endif %}">
+            <a href="{% url 'site_list' %}" class="menu-link">
+                <i class='menu-icon tf-icons bx bxl-product-hunt'></i>
+                <div data-i18n="Analytics">Site</div>
+            </a>
+        </li>
     </ul>
 </aside>
