@@ -20,6 +20,9 @@ import ServicePackage from "@/templates/assets/js/components/ServicePackage";
 import CustomerTestimonial from "@/templates/assets/js/components/CustomerTestimonial";
 import FaqOnline from "@/templates/assets/js/components/FaqOnline";
 import ServiceCounter from "@/templates/assets/js/components/ServiceCounter";
+import ServiceModel from "@/templates/assets/js/components/ServiceModel";
+import RoadNav from "@/templates/assets/js/components/RoadNav";
+import RoadFooter from "@/templates/assets/js/components/RoadFooter";
 const emitter = mitt();
 const app = createApp({})
 app.component('hello-project', HelloProject)
@@ -34,6 +37,9 @@ app.component('service-package', ServicePackage)
 app.component('customer-testimonial', CustomerTestimonial)
 app.component('faq-online', FaqOnline)
 app.component('service-counter', ServiceCounter)
+app.component('service-model', ServiceModel)
+app.component('road-nav', RoadNav)
+app.component('road-footer', RoadFooter)
 app.use(BootstrapVueNext);
 app.config.globalProperties.emitter = emitter;
 

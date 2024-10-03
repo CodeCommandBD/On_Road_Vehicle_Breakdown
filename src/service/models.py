@@ -4,8 +4,10 @@ from accounts.models import CustomUser
 
 class Vehicle(models.Model):
     customer = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    vehicle_number = models.CharField(max_length=20)
-    model = models.CharField(max_length=50)
+    vehicle_type = models.CharField(max_length=20)
+    fuel_type = models.CharField(max_length=20)
+    vehicle_brand = models.CharField(max_length=20)
+    model_number = models.CharField(max_length=50)
     problem_description = models.TextField()
 
 

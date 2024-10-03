@@ -27,12 +27,12 @@
 
 </div>
 
-<nav-bar title="{{title}}" logo=" {{ site.logo.url }} " site='{{ site_json }}'
+<road-nav title="{{title}}" logo=" {{ site.logo.url }} " site='{{ site_json }}'
          user_logged_in="{{user.is_authenticated}}" cart="{{cart_data}}" city="{{location.city}}"
-         region="{{location.region}}" country="{{location.country}}" user_name="{{user.first_name}}" user_email="{{user.email}}"></nav-bar>
+         region="{{location.region}}" country="{{location.country}}" user_name="{{user.first_name}}" user_email="{{user.email}}"></road-nav>
 {% block content %}
 {% endblock %}
-<footer-comp logo="{{ site.logo.url }}" site='{{ site_json }}'></footer-comp>
+<road-footer logo="{{ site.logo.url }}" site='{{ site_json }}'></road-footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

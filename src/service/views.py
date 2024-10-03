@@ -18,3 +18,6 @@ def userLogin(request):
         'title': "Login",
     }
     return render(request, 'website/login.html', context)
+
+def serviceModel(request):
+   return render(request, 'website/service-model.html')

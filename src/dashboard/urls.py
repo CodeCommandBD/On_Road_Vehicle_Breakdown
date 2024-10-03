@@ -4,6 +4,8 @@ from dashboard.views import dashboard
 
 from accounts.views import staff_login_view
 
+
+
 from dashboard.views import *
 
 urlpatterns = [
@@ -13,4 +15,5 @@ urlpatterns = [
     path('sites/', site_list, name='site_list'),
     path('sites/create/', site_create, name='site_create'),
     path('sites/update/', site_update, name='site_update'),
+
 ]
