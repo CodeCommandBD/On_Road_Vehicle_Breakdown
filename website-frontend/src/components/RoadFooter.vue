@@ -1,0 +1,425 @@
+<template>
+  <div class="footer-area d-flex align-items-end">
+    <div class="footer-bg w-100">
+      <img src="./Footer-img/Footer-bg.png" alt="Footer background"/>
+    </div>
+    <div></div>
+    <div class="footer-content position-absolute d-flex justify-content-center">
+      <div class="row footer-top m-0">
+        <div class="col-4">
+          <div class="footer-service-details">
+            <div class="footer-service-head-logo d-flex gap-3 align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
+                <rect
+                    x="1"
+                    y="1"
+                    width="48"
+                    height="48"
+                    rx="11"
+                    fill="url(#paint0_radial_76_8110)"
+                    stroke="white"
+                    stroke-width="2"
+                />
+                <g filter="url(#filter0_d_76_8110)">
+                  <path
+                      d="M39 32.4988C38.7315 33.8811 38.5533 34.5506 37.2685 36.2526C36.2385 37.254 34.2706 38.8055 32.5642 38.9215C33.8423 39.6565 38.5031 35.0564 39 32.4988Z"
+                      fill="#F23C13"
+                  />
+                  <path
+                      d="M23.3551 29.7422C20.345 30.529 17.0118 29.7561 14.6528 27.4035C11.9974 24.7591 11.3361 20.8836 12.6663 17.623L17.1258 22.0681L21.0493 21.0275L22.1021 17.1103L17.6414 12.6639C20.9113 11.3379 24.7994 11.9984 27.4535 14.644C29.8125 16.9966 30.5878 20.3178 29.796 23.3246L39 32.4988C38.7315 33.8811 38.5533 34.5506 37.2685 36.2526C36.2385 37.254 34.2706 38.8055 32.5642 38.9215L23.3551 29.7422Z"
+                      fill="white"
+                  />
+                </g>
+                <defs>
+                  <filter
+                      id="filter0_d_76_8110"
+                      x="4"
+                      y="8"
+                      width="43"
+                      height="43"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="4"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_76_8110"
+                    />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_76_8110" result="shape"/>
+                  </filter>
+                  <radialGradient
+                      id="paint0_radial_76_8110"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(25 25) rotate(90) scale(25)"
+                  >
+                    <stop stop-color="#FFA895"/>
+                    <stop offset="1" stop-color="#F23C13"/>
+                  </radialGradient>
+                </defs>
+              </svg>
+              <div class="footer-service-head">
+                <h2 class="mb-0">Service</h2>
+              </div>
+            </div>
+            <div class="footer-service-body">
+              <p>
+                We provide online and integrated audio-visual solutions for schools, government, and businesses,
+                enhancing communication and collaboration.
+              </p>
+            </div>
+            <div class="footer-social d-flex gap-3">
+              <div class="footer-social-link-one">
+                <img src="./Footer-img/Facebook.png" alt="Facebook"/>
+              </div>
+
+              <a href="" class="footer-social-link-two">
+                <img src="./Footer-img/Linkdin.png" alt="LinkedIn"/>
+              </a>
+              <a href="" class="footer-social-link-three">
+                <img src="./Footer-img/Linkdin.png" alt="LinkedIn"/>
+              </a>
+              <a href="" class="footer-social-link-four">
+                <img src="./Footer-img/Linkdin.png" alt="LinkedIn"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="footer-company">
+            <div class="footer-company-head">
+              <h2>Company</h2>
+            </div>
+            <div class="d-flex flex-column footer-company-details">
+              <a href="">About</a>
+              <a href="">Pricing</a>
+              <a href="">Jobs</a>
+              <a href="">Blog</a>
+              <a href="">Career</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="footer-company">
+            <div class="footer-company-head">
+              <h2>Product</h2>
+            </div>
+            <div class="d-flex flex-column footer-company-details">
+              <a href="">Details</a>
+              <a href="">Features</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Status</a>
+              <a href="">API</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="footer-company">
+            <div class="footer-company-head">
+              <h2>Discover</h2>
+            </div>
+            <div class="d-flex flex-column footer-company-details">
+              <a href="">Partner Program</a>
+              <a href="">Newsletter</a>
+              <a href="">How it works</a>
+              <a href="">Case Studies</a>
+              <a href="">Team of Service</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="footer-company">
+            <div class="footer-company-head">
+              <h2>Help Center</h2>
+            </div>
+            <div class="d-flex flex-column footer-company-details">
+              <a href="">Community</a>
+              <a href="">Knowledge</a>
+              <a href="">Terms & Condition</a>
+              <a href="">Privacy</a>
+              <a href="">Support</a>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="col-12 footer-bottom text-center">
+          <p>© 2022. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import ScrollMagic from "scrollmagic";
+
+export default {
+  mounted() {
+    const controller = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({
+      triggerElement: ".footer-service-head-logo",
+      triggerHook: 0.9,
+    })
+        .setClassToggle(".footer-service-head-logo", "visible")
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: ".footer-social-link-one",
+      triggerHook: 0.9,
+    })
+        .setClassToggle(".footer-social-link-one", "visible")
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: ".footer-social-link-two",
+      triggerHook: 0.9,
+    })
+        .setClassToggle(".footer-social-link-two", "visible")
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: ".footer-social-link-three",
+      triggerHook: 0.9,
+    })
+        .setClassToggle(".footer-social-link-three", "visible")
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: ".footer-social-link-four",
+      triggerHook: 0.9,
+    })
+        .setClassToggle(".footer-social-link-four", "visible")
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: ".footer-company-details",
+      triggerHook: 0.9,
+    })
+        .setClassToggle(".footer-company-details", "visible")
+        .addTo(controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: ".line",
+      triggerHook: 0.9,
+    })
+        .setClassToggle(".line", "visible")
+        .addTo(controller);
+  },
+};
+</script>
+
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body a {
+
+  text-decoration: none;
+}
+
+.footer-area {
+  width: 100%;
+  height: 100vh;
+}
+
+.footer-bg {
+  height: 650px;
+  overflow: hidden;
+  display: flex;
+}
+
+.footer-bg img {
+
+  width: 100%;
+}
+
+.footer-content {
+  left: 0;
+  right: 0;
+
+}
+
+.footer-top {
+  padding: 40px;
+}
+
+/* hr.line {
+    margin-top: 40px;
+    border: 1.5px solid white;
+    opacity: 1;
+
+} */
+
+.footer-service-head h2 {
+  color: #FFF;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  font-variant: small-caps;
+}
+
+.footer-service-body p {
+  color: #FFF;
+  text-align: justify;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+
+}
+
+.footer-service-body {
+  width: 200px;
+}
+
+.footer-service-head-logo {
+  margin-bottom: 25px;
+}
+
+.footer-social {
+  margin-top: 32px;
+}
+
+.footer-company-head {
+  margin-bottom: 20px;
+}
+
+.footer-company-head h2 {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 172%;
+  /* 27.52px */
+}
+
+.footer-company-details {
+  gap: 15px;
+}
+
+.footer-company-details a {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  /* 22.4px */
+
+}
+
+.footer-bottom {
+  color: #d1cdcd;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 172%;
+  margin: 20px 0 0;
+  /* 27.52px */
+}
+
+.footer-service-head-logo {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 1s ease-out;
+}
+
+.footer-service-head-logo.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.footer-social-link-one {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.5s ease-out;
+}
+
+.footer-social-link-one.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.footer-social-link-two {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+
+.footer-social-link-two.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.footer-social-link-three {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.5s ease-out;
+}
+
+.footer-social-link-three.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.footer-social-link-four {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 2s ease-out;
+}
+
+.footer-social-link-four.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.footer-company-details {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 1s ease-out;
+}
+
+.footer-company-details.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.line {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 1s;
+  margin-top: 20px;
+}
+
+.line.visible {
+  opacity: 1;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: none;
+
+}
+</style>
